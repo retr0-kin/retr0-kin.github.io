@@ -1,0 +1,162 @@
+*{margin:0; padding:0;font-family: 'Poppins', sans-serif; box-shadow: border-box;text-decoration: none;}
+
+.sidebar{
+  position: fixed;
+  width: 240px;
+  left: -240px;
+  height: 100%;
+  background:linear-gradient(to bottom,#00093c,#2d0b00);
+  transition: all .5s ease;
+}
+.sidebar header{
+  font-size: 28px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background:#00093c ;
+  user-select: none;
+  font-family: 'Montserrat', sans-serif;
+}
+.sidebar a{
+  display: block;
+  height: 65px;
+  width: 100%;
+  color: white;
+  line-height: 65px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  border-left: 5px solid transparent;
+  font-family: 'Open Sans', sans-serif;
+  transition: all .5s ease;
+}
+a.active,a:hover{
+  border-left: 5px solid #b93632;
+  color: #b93632;
+}
+.sidebar a i{
+  font-size: 23px;
+  margin-right: 16px;
+}
+.sidebar a span{
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #262626;
+  margin: 15px 30px;
+  font-size: 29px;
+  background:#2d0b00 ;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  line-height: 45px;
+  transition: all .5s ease;
+}
+label #cancel{
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  margin-left: 245px;
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ label #cancel{
+  margin-left: 245px;
+  opacity: 1;
+  visibility: visible;
+}
+@media(max-width : 860px){
+  .sidebar{
+    height: auto;
+    width: 70px;
+    left: 0;
+    margin: 100px 0;
+  }
+  header,#btn,#cancel{
+    display: none;
+  }
+  span{
+    position: absolute;
+    margin-left: 23px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .sidebar a{
+    height: 60px;
+  }
+  .sidebar a i{
+    margin-left: -10px;
+  }
+  a:hover {
+    width: 200px;
+    background: inherit;
+  }
+  .sidebar a:hover span{
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+p{font-size: 14px; font-weight: 400}
+
+li{font-size: 14px;}
+
+.hero{max-width: 114rem;height: 40rem;background: url(Cult.jpg) no-repeat center center/cover}
+
+main{width: 100%;max-width: 80rem;margin: 0 auto;background-color: white; padding: 3rem;border-radius: 1.3rem;margin-top: -15rem;border: 1px solid;}
+
+main h2{font-size:3rem;font-weight: 600;letter-spacing: 5px;text-transform: uppercase;}
+
+.imgvic{float: right; margin-left: 2%;}
+
+.imgben{float: left; margin-right: 2%;}
+
+.benro{float: left; margin-right: 2%; border: 1px solid;}
+
+.roden{float: left;margin-right: 2%;border: 1px solid; }
+
+.imgKores{float: right;margin-left: 2%;}
+
+.videntre{float: right;margin-left: 2%;margin-bottom: 2%;}
+
+.figtiro{float: right;margin-left: 2%; margin-bottom: 2%;}
+
+.imgtank{float:left;margin-right: 2%;margin-bottom: 2%;}
+
+.imgkathy{float: right;margin-left: 2%;margin-bottom: 2%;}
+
+.imggas{float:right;margin-left: 2%;margin-bottom: 2%;}
+
+.footer{margin-top: 150px;width: 100%;padding: 100px 15%; background: #565656;color:white;display: flex;}
+
+.footer div{text-align: center}
+
+.col-2{flex-grow: 1;}
+
+.footer{width: 100%;position: absolute;background: linear-gradient(to right,#00093c,#2d0b00);color: #fff;padding: 100px 0 30px;border-top-left-radius: 125px;font-size: 13px;line-height: 20px;margin-top: 10%;}
+
+.row1{width: 85%;margin: auto;display: flex;flex-wrap: wrap;align-items: flex-start;justify-content: space-between;}
+
+.col1{flex-basis: 25%;padding: 10px;}
+
+
+.logo{width: 80px;margin-bottom: 30px;}
+
+.col1 h3{width: fit-content; margin-bottom: 40px;position: relative;}
+
+.conta-but{display: inline-block;text-decoration: none; color: #fff; border: 1px solid #fff;padding: 12px 34px;font-size:15px;background: transparent;position: relative;cursor: pointer}
+
+.conta-but:hover{border: 1px solid ;background: #76323F  ;transition: 1s; color: white}

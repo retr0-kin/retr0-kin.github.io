@@ -1,0 +1,46 @@
+*{margin:0; padding:0;font-family: 'Poppins', sans-serif; overflow-x: hidden}
+
+.header{ min-height: 100vh; width: 100%; background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(waco.png); background-position: center;background-size: cover;position: relative;}
+
+.nav-links{text-align: right; padding-right: 50px;padding-top: 30px; color:#fff;font-size: 20px;}
+
+.conta-but{display: inline-block;text-decoration: none; color: #fff; border: 1px solid #fff;padding: 12px 34px;font-size:15px;background: transparent;position: relative;cursor: pointer}
+
+.conta-but:hover{border: 1px solid ;background: #76323F  ;transition: 1s; color: white}
+
+.text-box{width: 90%;color:#fff; position: absolute;top: 50%;left: 50%; transform: translate(-50%,-50%);text-align: center}
+
+.text-box h1{font-size:70px;}
+
+.text-box p{margin: 10px 0 40px;font-size: 16px;color: #fff;}
+
+.partes{width: 80%;margin: auto;text-align: center;padding-top: 100px;}
+h1{font-size: 36px;font-weight: 600;}
+
+.row{margin-top: 5%;display: flex;justify-content: space-between;}
+
+.par-col{transition: 0.5s}
+
+.par-col img{border-radius: 10px; border:1px solid #000000;}
+
+h3{text-align: center;font-weight: 600;margin: 10px}
+
+.par-col:hover{flex-basis: 31%;background:  #76323F;border-radius: 10px;margin-bottom: 5%;padding: 20px 12px;box-sizing: border-box;box-shadow:0 0 20px 0px rgba(0,0,0,0.2); color: white;}
+
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+.footer{width: 100%;position: absolute;background: linear-gradient(to right,#00093c,#2d0b00);color: #fff;padding: 100px 0 30px;border-top-left-radius: 125px;font-size: 13px;line-height: 20px;margin-top: 10%;}
+
+.row1{width: 85%;margin: auto;display: flex;flex-wrap: wrap;align-items: flex-start;justify-content: space-between;}
+
+.col1{flex-basis: 25%;padding: 10px;}
+
+
+.logo{width: 80px;margin-bottom: 30px;}
+
+.col1 h3{width: fit-content; margin-bottom: 40px;position: relative;}
+
